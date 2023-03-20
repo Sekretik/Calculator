@@ -8,12 +8,12 @@ public class Main {
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
 
-        String expression = scanner.nextLine();
-
-        try {
-            System.out.println(calculator.calculate(expression));
-        } catch (Exception e) {
-            e.printStackTrace();
+        while (true) {
+            try {
+                System.out.println(calculator.calculate(scanner.nextLine()));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 }
